@@ -1,0 +1,14 @@
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active" *ngIf="authenticated" ><a routerLink="/logout">Logout</a></li>
+      <li routerLinkActive="active"><a routerLink="">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="/curso">Cursos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
